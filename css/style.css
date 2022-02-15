@@ -8,6 +8,7 @@
 }
 
 body {
+  padding: 15px;
   overflow-x: hidden;
   background-color: #0D0D11;
   width: 100%;
@@ -270,6 +271,7 @@ body {
 }
 
 .people-cards {
+  margin: 0 10px;
   position: relative;
   background: #17171B;
   border-radius: 33.9506px;
@@ -279,6 +281,10 @@ body {
 
 .card-jame {
   width: 385px;
+}
+
+.card-dign {
+  width: 710px;
 }
 
 .people-card_top {
@@ -310,6 +316,7 @@ body {
 }
 
 .people-card_bottom {
+  margin: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,24 +325,14 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 1;
   color: #fff;
-  position: relative;
-  background-color: #17171B;
-  height: 64px;
-  width: 370px;
-}
-
-.people-card_bottom::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
+  border-radius: 16px;
   height: 64px;
   width: 315px;
+  border: 2px solid transparent;
   border-radius: 16px;
-  background: -webkit-gradient(linear, right top, left top, from(#14F195), to(#3380E3));
-  background: linear-gradient(to left, #14F195, #3380E3);
-  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#17171B), to(#17171B)), -webkit-gradient(linear, left top, right top, from(#14F195), to(#3790FF));
+  background: linear-gradient(to right, #17171B, #17171B), linear-gradient(to right, #14F195, #3790FF);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
