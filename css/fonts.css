@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Inter bold';
+    src: url('Inter-Bold.eot');
+    src: local('../fonts/Inter Bold'), local('Inter-Bold'),
+        url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter medium';
+    src: url('../fonts/Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display bold';
+    src: url('../fonts/SFProDisplay-Bold.eot');
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display regular';
+    src: url('..fonts/SFProDisplay-Regular.eot');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
