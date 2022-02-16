@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(fonts.css);
 * {
   padding: 0;
@@ -259,7 +260,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   margin-top: 50px;
+  margin-left: -10px;
 }
 
 .history_deposits-block_title {
@@ -275,16 +278,34 @@ body {
   position: relative;
   background: #17171B;
   border-radius: 33.9506px;
-  padding: 27px 0 0 33px;
+  padding: 27px 0 0 0;
   height: 210px;
 }
 
+.people-cards_wrap {
+  margin: auto;
+  height: 100%;
+  width: 80%;
+}
+
 .card-jame {
-  width: 385px;
+  min-width: 395px;
 }
 
 .card-dign {
-  width: 710px;
+  min-width: 710px;
+}
+
+.card-dign .people-cards_wrap {
+  width: 90%;
+}
+
+.card-ahmed {
+  min-width: 415px;
+}
+
+.card-ahmed .people-card_bottom-btn_trade {
+  width: 350px;
 }
 
 .people-card_top {
@@ -315,7 +336,7 @@ body {
   margin-left: 10px;
 }
 
-.people-card_bottom {
+.people-card_bottom-btn_trade {
   margin: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,9 +351,488 @@ body {
   height: 64px;
   width: 315px;
   border: 2px solid transparent;
-  border-radius: 16px;
   background: -webkit-gradient(linear, left top, right top, from(#17171B), to(#17171B)), -webkit-gradient(linear, left top, right top, from(#14F195), to(#3790FF));
   background: linear-gradient(to right, #17171B, #17171B), linear-gradient(to right, #14F195, #3790FF);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
+}
+
+.card-btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.people-card_bottom-btn_puls {
+  background: linear-gradient(102.26deg, rgba(51, 129, 227, 0.1) 5.2%, rgba(51, 129, 227, 0) 80.15%);
+  border-radius: 16px;
+  width: 66px;
+  height: 66px;
+  font-weight: 600;
+  font-size: 33.0719px;
+  line-height: 131.02%;
+  /* identical to box height, or 43px */
+  color: #3790FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.people-card_bottom-btn_bonus {
+  background: linear-gradient(285.43deg, rgba(51, 129, 227, 0.1) 18.83%, rgba(51, 129, 227, 0) 96.8%);
+  border-radius: 16px;
+  width: 210px;
+  height: 62px;
+  font-weight: 600;
+  font-size: 24.4444px;
+  line-height: 131.02%;
+  /* identical to box height, or 32px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  color: #3790FF;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-trade_left {
+  font-weight: 600;
+  font-size: 21.4444px;
+  line-height: 131.02%;
+  /* identical to box height, or 32px */
+  color: #14F195;
+}
+
+.btn-trade_right {
+  font-weight: 600;
+  font-size: 21.4444px;
+  line-height: 131.02%;
+  /* identical to box height, or 32px */
+  color: #3790FF;
+}
+
+.giveaway-block_wrap {
+  max-width: 1600px;
+  margin: 160px auto;
+}
+
+.giveaway-block_title {
+  font-family: 'SF Pro Display regular';
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 105%;
+}
+
+.giveaway-block_content {
+  background: #3790ff;
+  background: -webkit-gradient(linear, left top, right top, from(#3790ff), color-stop(68%, #454cff));
+  background: linear-gradient(90deg, #3790ff 0%, #454cff 68%);
+  border-radius: 30px;
+  height: 230px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.giveaway-content_cards {
+  padding: 27px 0 0 17px;
+  width: 24%;
+  height: 156px;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.cards-child_4 {
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#4558ff), to(#4558ff)), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.288)), to(#ffffff0e));
+  background: linear-gradient(to right, #4558ff, #4558ff), linear-gradient(to right, rgba(255, 255, 255, 0.288), #ffffff0e);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.cards-child_3 {
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#4558ff), to(#4558ff)), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.288)), to(#ffffff0e));
+  background: linear-gradient(to right, #4558ff, #4558ff), linear-gradient(to right, rgba(255, 255, 255, 0.288), #ffffff0e);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.cards-child_2 {
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#3790FF), to(#4558ff)), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.288)), to(#ffffff0e));
+  background: linear-gradient(to right, #3790FF, #4558ff), linear-gradient(to right, rgba(255, 255, 255, 0.288), #ffffff0e);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.cards-child_1 {
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#3790FF), to(#3790FF)), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.288)), to(#ffffff0e));
+  background: linear-gradient(to right, #3790FF, #3790FF), linear-gradient(to right, rgba(255, 255, 255, 0.288), #ffffff0e);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.content_cards_paragraph {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.giveaway-img {
+  position: absolute;
+  right: 0;
+  margin: -370px 0 0 0;
+}
+
+.rules-block_title {
+  font-family: 'SF Pro Display regular';
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 105%;
+}
+
+.rules-block_wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.rules-block_content {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rules-card {
+  width: 522px;
+  height: 284px;
+  background: #17171B;
+  -webkit-box-shadow: 0px 87.733px 97.3418px rgba(0, 0, 0, 0.0862625);
+          box-shadow: 0px 87.733px 97.3418px rgba(0, 0, 0, 0.0862625);
+  -webkit-backdrop-filter: blur(33px);
+          backdrop-filter: blur(33px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  padding: 27px 0 0 17px;
+}
+
+.rules-card:hover {
+  background: radial-gradient(1978.37% 466.69% at -18.1% 44.89%, #3790FF 0%, #3790FF 33.57%, #3091EB 66.61%, #4579FF 100%);
+}
+
+.rules-card:hover .card-text {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.saif-png {
+  height: 71px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124.02%;
+  /* identical to box height, or 25px */
+  /* с / white */
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(196, 221, 250, 0.2);
+  margin-top: 15px;
+}
+
+.calculat-block_wrap {
+  max-width: 1600px;
+  margin: auto;
+  margin-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculat-title {
+  position: relative;
+  font-size: 80px;
+  line-height: 80px;
+  color: #FFFFFF;
+  font-family: 'HelveticaNeueCyr bold';
+}
+
+.calculat-title::after {
+  content: url("../img/calculat-x2.png");
+  display: block;
+  position: absolute;
+  right: -25px;
+  bottom: 35px;
+}
+
+.calculat-paragraph {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #C4DDFA;
+  opacity: 0.39;
+}
+
+.block-calculator_content {
+  background: #17171B;
+  border-radius: 29px;
+  width: 760px;
+  height: 458px;
+  padding: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator-content_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-col_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #C4DDFA;
+  opacity: 0.39;
+}
+
+.top-col_price-from {
+  font-size: 52px;
+  line-height: 99.99%;
+  /* identical to box height, or 52px */
+  color: #FFFFFF;
+  font-family: 'HelveticaNeueCyr bold';
+  margin-top: 10px;
+}
+
+.top-col_price-to {
+  font-size: 52px;
+  line-height: 99.99%;
+  /* identical to box height, or 52px */
+  color: #14F195;
+  font-family: 'HelveticaNeueCyr bold';
+  margin-top: 10px;
+}
+
+.deposit-range {
+  width: 100%;
+  position: relative;
+  top: -55px;
+  background-color: #3D96F4;
+}
+
+.content_center-button_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deposit-btn {
+  border: none;
+  width: 63px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 131.02%;
+  /* or 26px */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-active {
+  background: #3790FF;
+}
+
+.calculator-content_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottom-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #C4DDFA;
+  opacity: 0.39;
+}
+
+.profit-result {
+  font-size: 20px;
+  line-height: 99.99%;
+  /* identical to box height, or 20px */
+  font-family: 'HelveticaNeueCyr bold';
+  color: #3F94FE;
+  margin-top: 10px;
+}
+
+.bottom-text_gradient {
+  font-family: 'HelveticaNeueCyr bold';
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 99.99%;
+  background-image: linear-gradient(45deg, #3F94FE, #14F195);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.bottom-text_number {
+  margin-top: 10px;
+  font-family: 'HelveticaNeueCyr bold';
+  font-size: 20px;
+  line-height: 99.99%;
+  /* identical to box height, or 20px */
+  color: #FFFFFF;
+}
+
+.bonus-block_wrap {
+  max-width: 1600px;
+  margin: auto;
+  margin-top: 160px;
+}
+
+.bonus-block_title {
+  font-family: 'HelveticaNeueCyr bold';
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  margin: auto;
+  width: 585px;
+  position: relative;
+  color: #fff;
+}
+
+.bonus-block_title::before {
+  content: url("../img/bonus-before.svg");
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -40px;
+}
+
+.bonus-block_title::after {
+  content: url("../img/bonus-after.svg");
+  display: block;
+  position: absolute;
+  right: -15px;
+  bottom: -25px;
+}
+
+.bonus-block_content {
+  background: #17171B;
+  -webkit-backdrop-filter: blur(17px);
+          backdrop-filter: blur(17px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 32px;
+  height: 415px;
+  width: 100%;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 46px 0;
+}
+
+.block-content_links {
+  width: 950px;
+  max-width: 950px;
+  height: 320px;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  border: 1px solid #333333;
 }
