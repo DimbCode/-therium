@@ -957,6 +957,7 @@ body {
 }
 
 .qr-btn {
+  position: relative;
   font-weight: 600;
   font-size: 18px;
   line-height: 130.02%;
@@ -967,6 +968,31 @@ body {
   height: 59px;
   background: rgba(34, 125, 230, 0.1);
   border-radius: 11px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  overflow: hidden;
+}
+
+.qr-btn:hover {
+  color: #fefefe;
+}
+
+.qr-btn::before {
+  content: '';
+  z-index: -1;
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #3790FF;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qr-btn:hover::before {
+  width: 100%;
 }
 
 .block-content_gift-wrap {

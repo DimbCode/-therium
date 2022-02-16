@@ -869,6 +869,7 @@ body {
     color: rgba(196, 221, 250, 0.19);
 }
 .qr-btn {
+    position: relative;
     font-weight: 600;
     font-size: 18px;
     line-height: 130.02%;
@@ -881,6 +882,27 @@ body {
 
     background: rgba(34, 125, 230, 0.1);
     border-radius: 11px;
+    transition: color .5s;
+    overflow: hidden;
+    &:hover {
+        color: #fefefe;
+    }
+    &::before {
+        content: '';
+        z-index: -1;
+        display: block;
+        width: 0;
+        height: 100%;
+        background-color: #3790FF;
+        transition: width .5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
 }
 .block-content_gift-wrap {
     padding: 15px 0 0 0;
