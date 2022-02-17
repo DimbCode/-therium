@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/web-logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETH</title>
 </head>
 
@@ -155,7 +154,7 @@
             <div class="rules-block_content">
                 <div class="rules-card">
                     <img src="img/saif.png" alt="saif" class="saif-png">
-                    <h3 class="card-title" style="margin-top: 0px;">Get your prize and the receive a gift</h3>
+                    <h3 class="card-title card-title_saif">Get your prize and the receive a gift</h3>
                     <p class="card-text">
                         In order to calculate your prize, you can use the built-<br>
                         in calculator on our website, after the deposit you<br>
@@ -164,8 +163,8 @@
                 </div>
                 <div class="rules-card">
                     <img src="img/gold.png" alt="gold" class="gold-png">
-                    <h3 class="card-title">How to participate ?</h3>
-                    <p class="card-text">
+                    <h3 class="card-title card-title_gold">How to participate ?</h3>
+                    <p class="card-text card-text_gold">
                         To participate you just need to send from (0.1 BTC to<br>
                         30 BTC) or (1 ETH to 500 ETH) to the contribution<br>
                         address and we will immediately send you back (0.2<br>
@@ -176,7 +175,7 @@
                 <div class="rules-card">
                     <img src="img/people-png.png" alt="people" class="gold-png">
                     <h3 class="card-title">About giveaway</h3>
-                    <p class="card-text">
+                    <p class="card-text card-text_gold">
                         We believe that BTC and ETH will make the world a<br>
                         fairer place. To speed up the process of mass adoption<br>
                         of cryptocurrencies, we decided to hold a draw of<br>
@@ -200,30 +199,31 @@
                         <h3 class="top-col_title">Deposit amount</h3>
                         <span class="top-col_price-from">10 ETH</span>
                     </div>
-                    <div class="content-top_col">
+                    <div class="content-top_col arrow-trade_range">
                         <img src="img/arrow-trade.svg" alt="arrow">
                     </div>
                     <div class="content-top_col">
-                        <h3 class="top-col_title">You get</h3>
+                        <h3 class="top-col_title top-col_title-get">You get</h3>
                         <span class="top-col_price-to">20 ETH</span>
                     </div>
                 </div>
                 <div class="calculator-content_center">
-                    <input type="range" class="deposit-range" min="0" max="50" value="10">
+                    <input type="range" class="deposit-range" min="0" max="500" value="10">
+                    <div class="deposit-range_min_max"><h4>0</h4><h4>10</h4><h4>50</h4><h4>100</h4><h4>500</h4></div>
                     <div class="content_center-button_wrap">
-                        <button class="deposit-btn button-active">10</button>
-                        <button class="deposit-btn">20</button>
-                        <button class="deposit-btn">30</button>
-                        <button class="deposit-btn">40</button>
-                        <button class="deposit-btn">50</button>
-                        <button class="deposit-btn">60</button>
-                        <button class="deposit-btn">70</button>
-                        <button class="deposit-btn">80</button>
-                        <button class="deposit-btn">90</button>
+                        <button class="deposit-btn button-active" onclick="deposit_btn0()">10</button>
+                        <button class="deposit-btn" onclick="deposit_btn1()">20</button>
+                        <button class="deposit-btn" onclick="deposit_btn2()">30</button>
+                        <button class="deposit-btn" onclick="deposit_btn3()">40</button>
+                        <button class="deposit-btn" onclick="deposit_btn4()">50</button>
+                        <button class="deposit-btn" onclick="deposit_btn5()">60</button>
+                        <button class="deposit-btn" onclick="deposit_btn6()">70</button>
+                        <button class="deposit-btn" onclick="deposit_btn7()">80</button>
+                        <button class="deposit-btn" onclick="deposit_btn8()">90</button>
                     </div>
                 </div>
                 <div class="calculator-content_bottom">
-                    <div class="content_bottom-col">
+                    <div class="content_bottom-col col-result">
                         <h3 class="bottom-title">Profit</h3>
                         <span class="profit-result">20 ETH</span>
                     </div>
@@ -281,7 +281,77 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="footer-head">
+                <div class="head-col">TxHash</div>
+                <div class="head-col">Block</div>
+                <div class="head-col">From</div>
+                <div class="head-col">To</div>
+                <div class="head-col">Value</div>
+                <div class="head-col">Fee</div>
+                <div class="head-col">Age</div>
+            </div>
+            <div class="footer-history">
+                <div class="footer-history-col">
+                    <img src="img/checked-footer.png" alt="" class="checked-footer">
+                    <span class="history-col-text_TxHash">02d63301a6...</span>
+                    <span class="history-col-text-number_block">616732</span>
+                    <div class="history-col-text_from">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_to">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_value">
+                        <span class="history-col-text-border">200 ETH</span>
+                        <span class="history-col-text">100 ETH</span>
+                    </div>
+                    <span class="history-col-text">0.0000065</span>
+                    <span class="history-col-text_time">right now</span>
+                </div>
+                <div class="footer-history-col">
+                    <img src="img/checked-footer.png" alt="" class="checked-footer">
+                    <span class="history-col-text_TxHash">02d63301a6...</span>
+                    <span class="history-col-text-number_block">616732</span>
+                    <div class="history-col-text_from">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_to">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_value">
+                        <span class="history-col-text-border">200 ETH</span>
+                        <span class="history-col-text">100 ETH</span>
+                    </div>
+                    <span class="history-col-text">0.0000065</span>
+                    <span class="history-col-text_time">right now</span>
+                </div>
+                <div class="footer-history-col">
+                    <img src="img/checked-footer.png" alt="" class="checked-footer">
+                    <span class="history-col-text_TxHash">02d63301a6...</span>
+                    <span class="history-col-text-number_block">616732</span>
+                    <div class="history-col-text_from">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_to">
+                        <span class="history-col-text_from_in">0xC48A...</span>
+                        <span class="history-col-text">0xC8tuX...</span>
+                    </div>
+                    <div class="history-col-text_value">
+                        <span class="history-col-text-border">200 ETH</span>
+                        <span class="history-col-text">100 ETH</span>
+                    </div>
+                    <span class="history-col-text">0.0000065</span>
+                    <span class="history-col-text_time">right now</span>
+                </div>
+            </div>
+        </footer>
     </div>
+<script src="script.js"></script>
 </body>
-
 </html>
