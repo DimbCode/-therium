@@ -203,13 +203,19 @@
                         <img src="img/arrow-trade.svg" alt="arrow">
                     </div>
                     <div class="content-top_col">
-                        <h3 class="top-col_title top-col_title-get">You get</h3>
+                        <h3 class="top-col_title top-col_title-get" style="margin-left: 30px;">You get</h3>
                         <span class="top-col_price-to">20 ETH</span>
                     </div>
                 </div>
                 <div class="calculator-content_center">
                     <input type="range" class="deposit-range" min="0" max="500" value="10">
-                    <div class="deposit-range_min_max"><h4>0</h4><h4>10</h4><h4>50</h4><h4>100</h4><h4>500</h4></div>
+                    <div class="deposit-range_min_max">
+                        <h4>0</h4>
+                        <h4 style="position: relative; left: 13px;">125</h4>
+                        <h4 style="position: relative; left: 13px;">250</h4>
+                        <h4>365</h4>
+                        <h4>500</h4>
+                    </div>
                     <div class="content_center-button_wrap">
                         <button class="deposit-btn button-active" onclick="deposit_btn0()">10</button>
                         <button class="deposit-btn" onclick="deposit_btn1()">20</button>
@@ -254,8 +260,8 @@
                         </div>
                         <div class="content_links-input_sec">
                             <h3 class="content_links-title">Send ETH to the following address</h3>
-                            <input type="text" value="17FbrQQkjQNZ5rrVLNga9VbmhwGK1hd7QM"
-                                class="bonus-input"><button class="links-btn links-btn_blue">Copy</button>
+                            <input type="text" value="17FbrQQkjQNZ5rrVLNga9VbmhwGK1hd7QM" class="bonus-input" id="bonus-input" maxlength="35">
+                            <button class="links-btn links-btn_blue" onclick="copy_button()">Copy</button>
                         </div>
                     </div>
                     <div class="content-qr_wrap">
@@ -352,6 +358,7 @@
             </div>
         </footer>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
