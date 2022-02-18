@@ -221,10 +221,15 @@ body {
     }
 }
 
-.header-block_img {
+.header-img-wrap {
     position: absolute;
-    margin-top: 30px;
-    right: -110px;
+    right: 0;
+    top: 170px;
+}
+.header-block_img {
+    top: 30px;
+    position: absolute;
+    right: -100px;
 }
 
 .history_deposits-block {
@@ -417,12 +422,12 @@ body {
 }
 
 .giveaway-content_cards {
+    position: relative;
     padding: 27px 0 0 17px;
     width: 24%;
     height: 156px;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 20px;
-
 }
 
 .cards-child_4 {
@@ -467,7 +472,7 @@ body {
     line-height: 25px;
 
     color: #FFFFFF;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .giveaway-img {
@@ -507,20 +512,22 @@ body {
     border-radius: 20px;
     padding: 27px 0 0 17px;
     transition: background .5s;
+    position: relative;
     &:hover {
         background: #3790FF;
-
-        
-
         .card-title {
-            transform: translate(-50%, 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 85px 0 0 0;
         }
         .gold-png {
+            left: 50%;
             transform: translateX(-50%);
             height: 75px;
         }
         .saif-png {
             height: 100px;
+            left: 50%;
             transform: translateX(-50%);
         }
         .card-text {
@@ -538,8 +545,7 @@ body {
     height: 71px;
     position: absolute;
     margin-top: -5px;
-    left: 50%;
-    transform: translateX(-245px);
+    left: 20px;
 }
 .card-title_saif {
     width: 342px;
@@ -548,15 +554,14 @@ body {
     height: 50px;
     transition: .5s;
     position: absolute;
-    left: 50%;
-    transform: translateX(-245px);
+    left: 20px;
 }
 .card-title {
     position: absolute;
-    left: 50%;
+    left: 20px;
 
-    transform: translateX(-245px);
-    transition: transform .5s;
+    margin: 65px 0 0 -0;
+    transition: .5s;
     font-weight: 500;
     font-size: 20px;
     line-height: 124.02%;
@@ -565,7 +570,6 @@ body {
     /* с / white */
 
     color: #FFFFFF;
-    margin-top: 65px;
 }
 .card-text {
     transition: .5s;
@@ -871,6 +875,7 @@ body {
 
 .block-content_links {
     padding: 26px;
+    min-width: 785px;
     width: 950px;
     max-width: 950px;
     height: 320px;
@@ -1133,4 +1138,131 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 1615px){
+    .giveaway-content_cards{
+        padding: 25px 0 0 10px;
+    }
+    .rules-card {
+        width: 32%;
+    }
+}
+@media (max-width: 1600px) {
+    .content_cards_paragraph {
+        font-size: 15px;
+    }
+    .content_gift-parapraph {
+        font-size: 15px;
+    }
+    .bonus-input {
+        width: 400px;
+        font-size: 14px;
+    }
+    .content-links_input {
+        position: relative;
+        left: -40px;
+    }
+    .block-content_links {
+        width: 65%;
+        display: flex;
+        justify-content: space-around;
+        padding: 26px 40px 26px 40px;
+    }
+    .block-content_gift-wrap {
+        width: 30%;
+        border-radius: 25px;
+    }
+}
+@media (max-width: 1560px) {
+    .header-block_text .header-block_title {
+        font-size: 80px;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+    .card-title {
+        left: 30px;
+    }
+    .card-text {
+        margin-left: 10px;
+    }
+    .card-text_gold {
+        left: 30px;
+    }
+}
+@media (max-width: 1440px) {
+    .header-block_img {
+        height: 500px;
+        margin-top: 30px;
+    }
+    .calculat-title {
+        font-size: 68px;
+    }
+    .block-content_links {
+        padding: 26px 5% 26px 5%;
+    }
+    .content_gift-title {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .content_gift-parapraph {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1400px) {
+    .content-qr_wrap {
+        left: 20px;
+    }
+    .content-links_input {
+        left: -20px;
+    }
+    .checked-footer {
+        margin-left: -100px;
+    }
+}
+@media (max-width: 1350px) {
+    .content_cards_paragraph {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 15px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .rules-card {
+        padding: 27px 27px 0 17px;
+    }
+    .card-title {
+        font-size: 15px;
+    }
+    .calculat-title {
+        font-size: 58px;
+        line-height: 70px;
+    }
+    .checked-footer {
+        margin-left: -90px;
+    }
+}
+@media (max-width: 1260px) {
+    .bonus-block_content {
+        padding: 0 20px 0;
+    }
+    .calculat-title {
+        line-height: 60px;
+        font-size: 48px;
+    }
+    .calculat-paragraph {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1200px) {
+    .header-block_text .header-block_title {
+        font-size: 70px;
+    }
+    .header-block_paragraph {
+        font-size: 15px;
+    }
+    .block-content_gift-wrap {
+        width: 350px;
+    }
 }

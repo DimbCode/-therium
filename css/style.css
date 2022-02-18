@@ -243,10 +243,16 @@ body {
   opacity: 0.7;
 }
 
-.header-block_img {
+.header-img-wrap {
   position: absolute;
-  margin-top: 30px;
-  right: -110px;
+  right: 0;
+  top: 170px;
+}
+
+.header-block_img {
+  top: 30px;
+  position: absolute;
+  right: -100px;
 }
 
 .history_deposits-block {
@@ -463,6 +469,7 @@ body {
 }
 
 .giveaway-content_cards {
+  position: relative;
   padding: 27px 0 0 17px;
   width: 24%;
   height: 156px;
@@ -507,7 +514,7 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-top: 10px;
+  margin: 10px 0 0 10px;
 }
 
 .giveaway-img {
@@ -552,6 +559,7 @@ body {
   padding: 27px 0 0 17px;
   -webkit-transition: background .5s;
   transition: background .5s;
+  position: relative;
 }
 
 .rules-card:hover {
@@ -559,11 +567,14 @@ body {
 }
 
 .rules-card:hover .card-title {
-  -webkit-transform: translate(-50%, 20px);
-          transform: translate(-50%, 20px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 85px 0 0 0;
 }
 
 .rules-card:hover .gold-png {
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 75px;
@@ -571,6 +582,7 @@ body {
 
 .rules-card:hover .saif-png {
   height: 100px;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -592,9 +604,7 @@ body {
   height: 71px;
   position: absolute;
   margin-top: -5px;
-  left: 50%;
-  -webkit-transform: translateX(-245px);
-          transform: translateX(-245px);
+  left: 20px;
 }
 
 .card-title_saif {
@@ -606,27 +616,21 @@ body {
   -webkit-transition: .5s;
   transition: .5s;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-245px);
-          transform: translateX(-245px);
+  left: 20px;
 }
 
 .card-title {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-245px);
-          transform: translateX(-245px);
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  left: 20px;
+  margin: 65px 0 0 -0;
+  -webkit-transition: .5s;
+  transition: .5s;
   font-weight: 500;
   font-size: 20px;
   line-height: 124.02%;
   /* identical to box height, or 25px */
   /* с / white */
   color: #FFFFFF;
-  margin-top: 65px;
 }
 
 .card-text {
@@ -970,6 +974,7 @@ body {
 
 .block-content_links {
   padding: 26px;
+  min-width: 785px;
   width: 950px;
   max-width: 950px;
   height: 320px;
@@ -1324,4 +1329,142 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1615px) {
+  .giveaway-content_cards {
+    padding: 25px 0 0 10px;
+  }
+  .rules-card {
+    width: 32%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .content_cards_paragraph {
+    font-size: 15px;
+  }
+  .content_gift-parapraph {
+    font-size: 15px;
+  }
+  .bonus-input {
+    width: 400px;
+    font-size: 14px;
+  }
+  .content-links_input {
+    position: relative;
+    left: -40px;
+  }
+  .block-content_links {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 26px 40px 26px 40px;
+  }
+  .block-content_gift-wrap {
+    width: 30%;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 1560px) {
+  .header-block_text .header-block_title {
+    font-size: 80px;
+  }
+  .card-text {
+    font-size: 15px;
+  }
+  .card-title {
+    left: 30px;
+  }
+  .card-text {
+    margin-left: 10px;
+  }
+  .card-text_gold {
+    left: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header-block_img {
+    height: 500px;
+    margin-top: 30px;
+  }
+  .calculat-title {
+    font-size: 68px;
+  }
+  .block-content_links {
+    padding: 26px 5% 26px 5%;
+  }
+  .content_gift-title {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .content_gift-parapraph {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .content-qr_wrap {
+    left: 20px;
+  }
+  .content-links_input {
+    left: -20px;
+  }
+  .checked-footer {
+    margin-left: -100px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .content_cards_paragraph {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 15px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .rules-card {
+    padding: 27px 27px 0 17px;
+  }
+  .card-title {
+    font-size: 15px;
+  }
+  .calculat-title {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .checked-footer {
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .bonus-block_content {
+    padding: 0 20px 0;
+  }
+  .calculat-title {
+    line-height: 60px;
+    font-size: 48px;
+  }
+  .calculat-paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-block_text .header-block_title {
+    font-size: 70px;
+  }
+  .header-block_paragraph {
+    font-size: 15px;
+  }
+  .block-content_gift-wrap {
+    width: 350px;
+  }
 }
