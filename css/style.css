@@ -546,6 +546,7 @@ body {
 }
 
 .rules-card {
+  overflow: hidden;
   width: 522px;
   height: 284px;
   background: #17171B;
@@ -752,7 +753,8 @@ body {
   left: 50%;
 }
 
-.top-col_price-from, .top-col_price-to {
+.top-col_price-from,
+.top-col_price-to {
   position: relative;
   top: 25px;
 }
@@ -1268,7 +1270,9 @@ body {
   left: 30px;
 }
 
-.history-col-text_from, .history-col-text_to, .history-col-text_value {
+.history-col-text_from,
+.history-col-text_to,
+.history-col-text_value {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1279,7 +1283,9 @@ body {
   position: relative;
 }
 
-.history-col-text_from .history-col-text, .history-col-text_to .history-col-text, .history-col-text_value .history-col-text {
+.history-col-text_from .history-col-text,
+.history-col-text_to .history-col-text,
+.history-col-text_value .history-col-text {
   margin-top: 20px;
 }
 
